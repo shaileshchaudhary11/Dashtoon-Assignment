@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+.container {
+  padding: 1.5625em; /* 25px / 16px */
+  text-align: center;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2.1875em; /* 35px / 16px */
+  margin-bottom: 1.25em; /* 20px / 16px */
+  background-color: rgb(37, 10, 10);
+  color: gold;
+  font-family: serif;
+}
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.3125em; /* 5px / 16px */
+    font-family: sans-serif;
+  }
+  
+  select,
+  button {
+    display: inline-block;
+    width: 100%;
+    padding: 0.625em; /* 10px / 16px */
+    margin: 0.625em 0; /* 10px / 16px */
+    background-color: aliceblue;
+    border: 1px solid #ccc;
+    border-radius: 0.3125em; /* 5px / 16px */
+    font-size: 1em; /* 16px / 16px */
+  }
+  
+  button {
+    max-width: 21.875em; /* 350px / 16px */
+    display: table-caption;
+    background-color: darkslategray; /* Change color */
+    border: 1px solid #ccc;
+    font-weight: bold;
+    font-family: serif;
+    color: whitesmoke;
+    cursor: pointer;
+    margin: 1.875em auto; /* 30px / 16px */
+  }
+  
+  button:hover {
+    background-color: rgb(80, 80, 159);
+  }
+  /* Input Styles */
+  input {
+    border: none;
+    border-bottom: 2px solid red;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 12px;
+    max-width: 786px;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  /* Container Styles */
+  .pannelParent {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+  }
+
+
+  .comic-display {
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+    gap: 10px;
+  }
+  
+  .com-pan {
+    flex: 1;
+    min-width: 18.75em; 
+    min-height: 18.75em;
+    max-width: 18.75em;
+  }
+  
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 3em;
+  }
+  
+
+  @media (max-width: 43.75em) { 
+    .pannelParent {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+  
+  @media (max-width: 31.25em) { 
+    .comic-panel {
+      max-width: 18.75em; 
+      max-height: 18.75em;
+    }
+  }
+  
